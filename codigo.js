@@ -5,16 +5,20 @@ var texto = document.querySelector(".texto");
 var imagen = document.querySelector(".imagen-muñeco");
 let bCopiar = document.querySelector(".bCopiar");
 var footer = document.querySelector(".footer-principal");
+var mensaje = document.querySelector(".mensaje-Encriptado").style.display = 'none';
+
 
 
 
 bEncriptar.addEventListener("click",(e)=>{
+    if(texto.value != ''){
     textoEncriptado.innerHTML = "";
     encriptar();
     texto.value = '';
     imagen.style.display = 'none';
     footer.style.display = 'none';
-
+    document.querySelector(".mensaje-Encriptado").style.display = "block";
+    }
    
 });
 
@@ -24,8 +28,12 @@ bCopiar.addEventListener("click", (e)=>{
 
 
 bDesencriptar.addEventListener("click",()=>{
+    if(texto.value != ''){
+ document.querySelector(".mensaje-Encriptado").innerHTML = "Mensaje Desencrpitado :)";
  desencriptar();
  imagen.style.display = 'block';
+    }
+
 })
 
 
@@ -58,8 +66,7 @@ function desencriptar (){
     else{
         textoEncriptado.innerHTML += texto.value.charAt(i);
     }
-
    
-}
-
+   
+   }
  }
