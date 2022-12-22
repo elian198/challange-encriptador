@@ -3,16 +3,10 @@ html{
     background-color: #E5E5E5;;
   
 }
-.imagen-muñeco{
-    height: 304px;
-    width: 336px;
-    margin-bottom: 60px;
-    border-radius: 0px;
-    
-}
+
 .resultado-imagen{
     height: auto;
-    width: 400px;
+    width: 90%;
     display:  flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +14,15 @@ html{
     border-radius: 32px;
     text-align: center;
     margin-left: 20px;
-    background-color: cadetblue
+    background-color: cadetblue;
+    min-width: 270px;
+    
+}
+.imagen-muñeco{
+    height: 200px;
+    width: 50px;
+    margin-bottom: 60px;
+    border-radius: 0px;
     
 }
 footer{
@@ -56,6 +58,7 @@ background-color: transparent;
 text-shadow: 1px 1px;
 }
 .contenedor-input{
+    width: 100%;
     margin-left: 20px;
 }
 .encriptar, .desencriptar{
@@ -88,12 +91,21 @@ border: none;
     margin-top: 50px;
     margin-left: 0;
     text-align: center;
-    
+
 }
-.encriptar:hover, .desencriptar:hover{
+.encriptar:hover, .desencriptar:hover, .bCopiar:hover{
     opacity: 0.5;
 
 }
+.imagen-vector img{
+    width: 14px;
+    height: 14px;
+}
+.resultado-imagen img{
+    width:  90%;
+    border-radius: 10px;
+}
+
 h2{
     height: 10px;
 }
@@ -123,22 +135,42 @@ input{
       width: 400px;
       margin-bottom: 150px;
       display: flex;
-      flex-wrap: wrap;
+      text-align: center;
+      margin-bottom: 70px;
 
     }
+    .contenedor-input {
+        justify-content: center;
+        text-align: center;
+    }
     .resultado-imagen{
-        min-width:  350px;
+        min-width:  400px;
         height: auto;
         margin-left: 0;
     }
     .footer-principal{
         margin-top: 20px;
-    min-width: 380px;
+        margin-bottom: 30px;
+        min-width: 380px;
+        background-color: rgba(0, 0, 0, 0.3);
     }
+    .footer-principal p{
+        color: aliceblue;
+    }
+
     .encriptar ,.desencriptar{
         min-width: 187px;
     }
-    
+    .imagen-vector{
+        margin-bottom: 20px;
+    }
+    footer{
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+    }
 }
 .bCopiar{
     
@@ -150,5 +182,5 @@ input{
     margin-bottom: 20px;
     color: #E5E5E5;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }

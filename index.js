@@ -2,10 +2,13 @@ const bEncriptar = document.querySelector(".encriptar");
 const bDesencriptar = document.querySelector(".desencriptar");
 var textoEncriptado = document.querySelector(".resultado");
 var texto = document.querySelector(".texto");
-var imagen = document.querySelector(".imagen-muñeco");
+var imagen = document.querySelector(".candado-abierto");
 let bCopiar = document.querySelector(".bCopiar");
 var footer = document.querySelector(".footer-principal");
 var mensaje = document.querySelector(".mensaje-Encriptado").style.display = 'none';
+var candado = document.querySelector(".imagen-muñeco").style.display = 'none';
+
+
 
 
 
@@ -18,6 +21,8 @@ bEncriptar.addEventListener("click",(e)=>{
     imagen.style.display = 'none';
     footer.style.display = 'none';
     document.querySelector(".mensaje-Encriptado").style.display = "block";
+    document.querySelector(".imagen-muñeco").style.display = "block";
+    document.querySelector(".resultado-imagen").style.backgroundColor = 'gray';
     }
    
 });
@@ -32,9 +37,11 @@ bDesencriptar.addEventListener("click",()=>{
  document.querySelector(".mensaje-Encriptado").innerHTML = "Mensaje Desencrpitado :)";
  desencriptar();
  imagen.style.display = 'block';
-    }
+document.querySelector(".imagen-muñeco").style.display = 'none';
+document.querySelector(".resultado-imagen").style.backgroundColor = 'cadetblue';
 
-})
+    }
+});
 
 
 function desencriptar (){
