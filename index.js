@@ -20,6 +20,7 @@ bEncriptar.addEventListener("click",(e)=>{
     texto.value = '';
     imagen.style.display = 'none';
     footer.style.display = 'none';
+    document.querySelector(".resultado").style.width = 100;
     document.querySelector(".mensaje-Encriptado").style.display = "block";
     document.querySelector(".imagen-muñeco").style.display = "block";
     document.querySelector(".resultado-imagen").style.backgroundColor = 'gray';
