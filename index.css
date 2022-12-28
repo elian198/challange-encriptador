@@ -2,7 +2,8 @@ html{
 
     background-color: #E5E5E5;
     padding: 5px;
-
+    background-image: url(https://us.123rf.com/450wm/kotkoa/kotkoa1410/kotkoa141000063/32619687-c%C3%B3digo-binario-abstracto-sobre-fondo-naranja-de-estilo-matrix-.jpg?ver=6);
+    background-size: cover;
   
 }
 
@@ -20,6 +21,7 @@ html{
     min-width: 250px;
     
 }
+
 .resultado {
     width: 20%;
     
@@ -43,6 +45,7 @@ footer{
     display: flex;
     padding: 10px;
      justify-content: space-around;
+     opacity: 0.8;
     
 }
 .texto{
@@ -129,7 +132,7 @@ span{
 }
 
 p{
-   color: cadetblue;
+   color: gray;
 }
 
 input{
@@ -194,6 +197,7 @@ input{
     }
 
     .encriptar ,.desencriptar{
+        margin-bottom: 10px;
         min-width: 187px;
     }
     .imagen-vector{

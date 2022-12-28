@@ -23,7 +23,7 @@ bEncriptar.addEventListener("click",(e)=>{
     document.querySelector(".resultado").style.width = 100;
     document.querySelector(".mensaje-Encriptado").style.display = "block";
     document.querySelector(".imagen-muñeco").style.display = "block";
-    document.querySelector(".resultado-imagen").style.backgroundColor = 'gray';
+   var resultadoImagen = document.querySelector(".resultado-imagen").style.backgroundColor = '#58ACFA';
     }
    
 });
@@ -56,6 +56,9 @@ function desencriptar (){
 
     for(let i = 0; i< texto.value.length ; i++){
         
+        if(i % 5 == 0){
+            textoEncriptado.innerHTML += " ";
+        }
     if(texto.value.charAt(i) == 'a'){
         textoEncriptado.innerHTML += texto.value.charAt(i) + "i";
     }
